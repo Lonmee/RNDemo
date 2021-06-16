@@ -9,7 +9,11 @@ const HomeStack = () => {
   return (
     <BtmTab.Navigator>
       <BtmTab.Screen name="Home" component={HomeScreen} />
-      <BtmTab.Screen name="Profile" component={ProfileScreen} />
+      <BtmTab.Screen
+        name="Profile"
+        component={ProfileScreen}
+        options={{title: 'Profile'}}
+      />
       <BtmTab.Screen name="Settings" component={SettingsScreen} />
     </BtmTab.Navigator>
   );
