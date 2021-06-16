@@ -9,7 +9,7 @@ const Demo = () => {
   const Stack = createStackNavigator();
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Home">
+      <Stack.Navigator initialRouteName="Home" headerMode="none">
         <Stack.Screen name="Home" component={HomeStack} />
         <Stack.Screen name="Details" component={DetailsScreen} />
         <Stack.Screen name="Webview" component={WebviewScreen} />
